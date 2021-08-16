@@ -1,25 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    float a, b;
-    int c;
-    printf("Enter two numbers you want to operate\n");
-    scanf("%f %f", &a, &b);
+    int a, b;
+    printf("Enter two integers you want to operate\n");
+    scanf("%d %d", &a, &b);
     printf("Sum = ");
-    printf("%.2f", a + b);
+    printf("%d", a + b);
     printf("\nDifference = ");
-    printf("%.2f", a - b);
+    printf("%.d", a - b);
     printf("\nProduct = ");
-    printf("%.2f", a * b);
-    c = (int)a * (int)b;
-    switch (c) {
+    printf("%d", a * b);
+    switch (b) {
     case 0:
         printf("\nQuotient = error");
         return 0;
 
     default:
         printf("\nQuotient = ");
-        printf("%.2f", a / b);
+        printf("%d", a / b);
         return 0;
     }
 }
